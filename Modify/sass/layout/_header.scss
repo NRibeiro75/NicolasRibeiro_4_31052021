@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    .header_logo img{
+        height:$size-logo;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        padding:15px;
+        a{
+            color:$color-text;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@mixin cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 30px auto;
+
+    & span{
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 15px;
+        color: $color-icons;
+        border-color: $color-icons;
+    }
+    & h3{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $color-title-img;
+    }
+    & p{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-text;
+        margin-bottom: 10px;
+    }
+}
+
+@mixin btn{
+    background:$color-orange;
+    color:$color-white;
+    margin-top: 22px;
+    margin-bottom:5px;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-bottom-color: rgba(0, 0, 0, .1);
+    text-shadow: 0 1px 0 rgb(0 0 1 / 10%);
+    box-shadow: 0 1px 3px rgb(0 0 1 / 25%), inset 0 1px 0 0 rgb(255 255 255 / 15%);
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: none !important;
+
+    &:hover{
+        background: #c27956 !important;
+        color: #FFFFFF !important;
+    }
+    &:active{
+        box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+    }
+}

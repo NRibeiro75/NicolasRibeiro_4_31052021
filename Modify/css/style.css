@@ -1,0 +1,294 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "helvetica", sans-serif;
+}
+
+.btn {
+  background: #F3976C;
+  color: #FFFFFF;
+  margin-top: 22px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  padding: 12px 28px 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(0, 0, 1, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: none !important;
+}
+.btn:hover {
+  background: #c27956 !important;
+  color: #FFFFFF !important;
+}
+.btn:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.cta_banniere {
+  background-image: url(../img/la-chouette-agence-banniere.jpg);
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.cta_banniere::before {
+  background: url(../img/texture-paper.png);
+  background-size: 280px 280px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cta_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta_details h2 {
+  color: #F3976C;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.4em;
+  font-weight: 400;
+  text-align: center;
+}
+.cta_details .btn {
+  position: relative;
+}
+
+.footer {
+  background-color: #F3976C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.footer_details {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.footer_details .social {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.header .header_logo img {
+  height: 40px;
+}
+.header ul {
+  display: flex;
+}
+.header li {
+  padding: 15px;
+}
+.header li a {
+  color: #575757;
+}
+
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(../img/lines-h2-bg.png);
+}
+.portfolio h1 {
+  text-align: center;
+}
+.portfolio .realisation {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.presentation .banniere {
+  background-image: url(../img/la-chouette-agence-banniere.jpg);
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.presentation .banniere::before {
+  background: url(../img/texture-paper.png);
+  background-size: 280px 280px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.presentation .banniere .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.presentation .banniere .details img {
+  width: 100px;
+}
+.presentation .banniere .details h1 {
+  font-size: 32px;
+  color: #F3976C;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.services {
+  padding-top: 50px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services h2 {
+  font-weight: 400;
+  color: #575757;
+  text-align: center;
+  width: 650px;
+  font-size: 24px;
+  margin: auto;
+}
+.services_presentation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.services_cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 30px auto;
+}
+.services_cards span {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #364577;
+  border-color: #364577;
+}
+.services_cards h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
+}
+.services_cards p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #575757;
+  margin-bottom: 10px;
+}
+.services .citation {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+.services .citation p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  color: #575757;
+  line-height: 1.4;
+}
+.services .citation figcaption {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.wid {
+  margin-top: 50px;
+}
+.wid_banniere {
+  background-image: url(../img/image-de-presentation.jpg);
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.wid_banniere::before {
+  background: url(../img/texture-paper.png);
+  background-size: 280px 280px;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wid_banniere .details {
+  background-color: rgba(165, 147, 99, 0.7);
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+.wid_banniere h2 {
+  color: #F3976C;
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.wid_banniere p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.wid_banniere a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
