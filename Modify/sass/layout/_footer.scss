@@ -1,13 +1,19 @@
-.footer{
+footer{
     background-color: $color-orange;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    .brief{
+        font-size:12px;
+    }
     p{
+        margin-bottom: 10px;
+    }
+    .lca{
         text-align: center;
         color: $color-white;
         margin-bottom: 15px;
     }
-    &_details{
+    .details{
         display: flex;
         max-width: 500px;
         justify-content: space-evenly;
@@ -15,7 +21,44 @@
         .social{
             font-size: 30px;
             color: rgba(255, 255, 255, .6);
+            .fa-twitter:hover{
+                color:$color-twitter;
+            }
+            .fa-facebook:hover{
+                color:$color-facebook;
+            }
+            .fa-dribbble:hover{
+                color:$color-dribbble;
+            }
+            .fa-instagram:hover{
+                background:$color-instagram;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            .fa-linkedin:hover{
+                color:$color-linkedin;
+            }
+        }
+        .scrollToTop{
+            position: absolute;
+            right:10px;
+            &:hover{
+                box-shadow: inset 1px -1px 10px 1px #00000080;
+            }
         }
     }
+    p{
+        text-align: center;
+        color: $color-white;
+        margin-top: 15px;
+        .logo_ocr{
+            width:200px;
+            height:25px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:375px) {
     
 }

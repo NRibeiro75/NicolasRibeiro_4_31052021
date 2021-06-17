@@ -1,0 +1,124 @@
+.talk{
+    &_banniere{
+        background-image: url(../img/dots-bg.png);
+        background-color: $color-orange;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        background-size: auto;
+        border-radius: 50px;
+        box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
+        margin-left: 5%;
+        margin-right: 5%;
+        &::before{
+            background: url(../img/texture-paper.png);
+            background-size: 280px 280px;
+            border-radius: 50px;
+            background-attachment: fixed;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        } 
+    }
+    &_details{
+        display: flex;
+        flex-direction: column;
+        h1{
+            text-align: center;
+            position: relative;
+            font-size: 50px;
+            padding-bottom: 15px;
+            background-color: #000000c2;
+            color: transparent;
+            text-shadow: 2px 2px 5px rgb(192 119 85 / 68%);
+            -webkit-background-clip: text;
+        }
+        p{
+            text-align: center;
+            color: $color-text;
+            line-height: 1.4;
+            // margin: auto;
+            font-size: 14px;
+        }
+    }
+}
+.contact{
+    background: bisque;
+    box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-image: url(../img/dots-bg.png);
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 40px;
+    &::before{
+        background: url(../img/texture-paper.png);
+        background-size: 280px 280px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-attachment: fixed;
+        border-radius: 40px;
+    }
+    .btn{
+        align-self: flex-end;
+        position: relative;
+        margin: 0px;
+        display: block;
+        float: right;
+        bottom: 100px;
+        border-radius: 40px 0 0 40px;
+        box-shadow: -1px 3px 3px 1px #000000b0;
+        &:hover{
+            box-shadow: inset -3px 0px 10px 0px black;
+        }
+    }
+}
+
+#form_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 440px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    .form-group {
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        margin:2%;
+        .brief{
+            font-size:13px;
+        }
+    }
+    input {
+        border: none;
+        outline: none;
+        box-shadow: inset 1px -1px 0px 0px #f3976c;
+        width:250px;
+    }
+    #message{
+        margin: 10px 0px 0px;
+        width: 250px;
+        height: 100px;
+        box-shadow: rgb(243 151 108) 1px 1px 0px 0px inset;
+        border: none;
+        outline: none;
+        padding: 10px;
+    }
+   
+}
+
+@media screen and (max-width:375px) {
+
+}

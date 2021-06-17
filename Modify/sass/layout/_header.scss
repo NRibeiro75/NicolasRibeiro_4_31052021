@@ -1,11 +1,28 @@
+.page-container{
+    background-image: url(../img/lca.png);
+    background-size: 15px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hp2{
+    background: #ffe4c4e0;
+    border-radius: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
+}
 .header{
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    line-height:25px;
     .header_logo img{
         height:$size-logo;
+        margin-top: 5px;
     }
     ul{
         display: flex;
@@ -15,5 +32,69 @@
         a{
             color:$color-text;
         }
+    }
+}
+
+.menu, #toggle{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+
+@media all and (max-width: 768px){
+    
+    .header{
+        display: block;
+        line-height: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        nav{
+            display:none;
+            flex-direction: column;
+            // transition: all 0.5s ease-in-out;
+            // transform: translate(0, -1000px);
+            // position:absolute;
+        }
+        ul{
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        li{
+            padding: 10px;
+            background-color: #a9a9a91c;
+            padding-right: 24vw;
+            padding-left: 24vw;
+            margin-bottom: 5px;
+            text-align: center;
+            box-shadow: inset -1px 1px 10px 1px #00000096;
+            border-radius: 10px;
+        }
+    }
+ 
+    nav a {
+        width: 50%;
+    }
+ 
+ 
+    #toggle:checked + nav {
+        display: flex;
+        align-items: center;
+        // height: 175px;
+        // transition: all 0.5s ease-in-out;
+        // transform: translate(0, 0);
+        // position: relative;
+    }
+    .menu{
+        display: flex;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        justify-content: flex-end;
+        position: relative;
+        top: -34px;
     }
 }
