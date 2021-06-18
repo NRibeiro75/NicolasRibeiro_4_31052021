@@ -2,7 +2,8 @@ footer{
     background-color: $color-orange;
     padding-top: 10px;
     padding-bottom: 5px;
-    .brief{
+    
+    .adress{
         font-size:12px;
     }
     p{
@@ -57,6 +58,13 @@ footer{
         }
     }
     
+}
+.footer_p2{
+    box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 40px;
+    background-color: #f3976ce3;
 }
 
 @media screen and (max-width:375px) {

@@ -85,7 +85,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-footer .brief {
+footer .adress {
   font-size: 12px;
 }
 footer p {
@@ -138,6 +138,14 @@ footer p {
 footer p .logo_ocr {
   width: 200px;
   height: 25px;
+}
+
+.footer_p2 {
+  box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 40px;
+  background-color: #f3976ce3;
 }
 
 .page-container {
