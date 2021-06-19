@@ -10,7 +10,7 @@
         font-weight: 400;
         color: #575757;
         text-align: center;
-        width: 650px;
+        max-width: 650px;
         font-size: 24px;
         margin: auto;
     }
@@ -30,7 +30,7 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
+        max-width: 500px;
         & p{
             font-size: 20px;
             font-style: italic;
@@ -41,6 +41,19 @@
         & .author{
             margin-top: 5px;
             font-size: 15px;
+        }
+    }
+}
+
+@media all and (max-width:768px) {
+    .services{
+        &_presentation{
+            flex-direction: column;
+        }
+    }
+    .citation{
+        p{
+            padding:10px;
         }
     }
 }
