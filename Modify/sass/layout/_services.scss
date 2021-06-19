@@ -25,7 +25,7 @@
     &_cards{
         @include cards;
     }
-    & .citation{
+    .citation{
         margin-top: 50px;
         text-align: center;
         margin-left: auto;
@@ -38,7 +38,7 @@
             color: #575757;
             line-height: 1.4;
         }
-        & figcaption{
+        & .author{
             margin-top: 5px;
             font-size: 15px;
         }

@@ -140,30 +140,6 @@ footer p .logo_ocr {
   height: 25px;
 }
 
-.footer_p2 {
-  box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 40px;
-  background-color: #f3976ce3;
-}
-
-.page-container {
-  background-image: url(../img/lca.png);
-  background-size: 15px;
-  position: relative;
-  background-attachment: fixed;
-}
-
-.hp2 {
-  background: #ffe4c4e0;
-  border-radius: 40px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 2%;
-  box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
-}
-
 .header {
   display: flex;
   justify-content: space-evenly;
@@ -358,7 +334,7 @@ footer p .logo_ocr {
   color: #575757;
   line-height: 1.4;
 }
-.services .citation figcaption {
+.services .citation .author {
   margin-top: 5px;
   font-size: 15px;
 }
@@ -418,15 +394,10 @@ footer p .logo_ocr {
   padding-bottom: 100px;
   position: relative;
   background-size: auto;
-  border-radius: 50px;
-  box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 .talk_banniere::before {
   background: url(../img/texture-paper.png);
   background-size: 280px 280px;
-  border-radius: 50px;
   background-attachment: fixed;
   content: "";
   position: absolute;
