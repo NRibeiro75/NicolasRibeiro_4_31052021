@@ -21,7 +21,7 @@ body {
 
 .btn {
   background: #F3976C;
-  color: #FFFFFF;
+  color: black;
   margin-top: 22px;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -185,6 +185,7 @@ a[data-lightbox]:hover img {
   line-height: 1.4em;
   font-weight: 400;
   text-align: center;
+  position: relative;
 }
 .cta_details .btn {
   position: relative;
@@ -203,7 +204,7 @@ footer p {
 }
 footer .lca {
   text-align: center;
-  color: #FFFFFF;
+  color: black;
   margin-bottom: 15px;
 }
 footer .details {
@@ -242,7 +243,7 @@ footer .details .scrollToTop:hover {
 }
 footer p {
   text-align: center;
-  color: #FFFFFF;
+  color: black;
   margin-top: 15px;
 }
 footer p .logo_ocr {
