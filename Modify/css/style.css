@@ -407,6 +407,11 @@ footer p .logo_ocr {
   margin-bottom: 10px;
 }
 
+@media all and (max-width: 768px) {
+  .presentation .banniere {
+    background-attachment: scroll;
+  }
+}
 .services {
   padding-top: 50px;
   max-width: 1000px;
@@ -535,6 +540,11 @@ footer p .logo_ocr {
   text-decoration: underline;
 }
 
+@media all and (max-width: 768px) {
+  .wid_banniere {
+    background-attachment: scroll;
+  }
+}
 .talk_banniere {
   background-image: url(../img/dots-bg.png);
   background-color: #F3976C;
