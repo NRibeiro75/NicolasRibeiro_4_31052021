@@ -455,6 +455,12 @@ footer p .logo_ocr {
     background-attachment: scroll;
   }
 }
+@media all and (max-width: 425px) {
+  .presentation .banniere {
+    background-image: url(../img/la-chouette-agence-banniere-mobile-min.jpg);
+    background-position-x: center;
+  }
+}
 .services {
   padding-top: 50px;
   max-width: 1000px;
