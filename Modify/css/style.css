@@ -247,6 +247,9 @@ footer .lca {
   text-align: center;
   color: black;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 footer .details {
   display: flex;

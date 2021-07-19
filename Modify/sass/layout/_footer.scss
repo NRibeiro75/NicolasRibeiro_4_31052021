@@ -13,6 +13,9 @@ footer{
         text-align: center;
         color: $color-black;
         margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        width:100%;
     }
     .details{
         display: flex;
