@@ -2,8 +2,8 @@
     &_banniere{
         background-image: url(../img/dots-bg.png);
         background-color: $color-orange;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         position: relative;
         background-size: auto;
         // border-radius: 50px;
@@ -27,9 +27,11 @@
         display: flex;
         flex-direction: column;
         h1{
+            margin: unset;
             text-align: center;
             position: relative;
-            font-size: 50px;
+            // font-size: 50px;
+            font-size: 70px;
             padding-bottom: 15px;
             background-color: #000000c2;
             color: transparent;
@@ -46,37 +48,20 @@
     }
 }
 .contact{
-    background: bisque;
-    box-shadow: inset 1px 1px 10px 1px #0000007a, inset -1px -1px 10px 1px #0000007a;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-image: url(../img/dots-bg.png);
-    background-attachment: fixed;
-    position: relative;
-    border-radius: 40px;
-    &::before{
-        background: url(../img/texture-paper.png);
-        background-size: 280px 280px;
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-attachment: fixed;
-        border-radius: 40px;
-    }
+    margin: 10px;
+
     .btn{
-        align-self: flex-end;
-        position: relative;
-        margin: 0px;
-        display: block;
-        float: right;
-        bottom: 100px;
-        border-radius: 40px 0 0 40px;
+        // align-self: flex-end;
+        // position: relative;
+        // margin: 0px;
+        // display: block;
+        // float: right;
+        // bottom: 100px;
+        // border-radius: 40px 0 0 40px;
         box-shadow: -1px 3px 3px 1px #000000b0;
+        border-radius: 4px;
+        width: 100%;
+        margin: auto;
         &:hover{
             box-shadow: inset -3px 0px 10px 0px black;
         }
@@ -84,41 +69,37 @@
 }
 
 #form_1{
-    display: flex;
-    flex-direction: column;
+    
     align-items: center;
     max-width: 440px;
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     .form-group {
         padding-bottom: 15px;
         display: flex;
         flex-direction: column;
-        margin:2%;
+        .form-control {
+            border: 1px solid $color-orange;
+        }
         .brief{
             font-size:13px;
         }
     }
-    input {
-        border: none;
-        outline: none;
-        box-shadow: inset 1px -1px 0px 0px #f3976c;
-        width:250px;
-    }
-    #message{
-        margin: 10px 0px 0px;
-        width: 250px;
-        height: 100px;
-        box-shadow: rgb(243 151 108) 1px 1px 0px 0px inset;
-        border: none;
-        outline: none;
-        padding: 10px;
-    }
-   
+    
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:425px) {
+    .talk_details h1{
+        font-size:60px;
+    }
+}
 
+@media screen and (max-width:376px) {
+    .talk_details h1{
+        font-size:50px;
+    }
 }
