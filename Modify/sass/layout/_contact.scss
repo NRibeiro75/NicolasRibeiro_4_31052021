@@ -67,8 +67,12 @@
         padding-bottom: 15px;
         display: flex;
         flex-direction: column;
-        .form-control {
-            border: 1px solid $color-orange;
+        .form-control:focus {
+            // border: 1px solid $color-orange;
+            border-color: #ccc;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(243 151 108);
         }
         .brief{
             font-size:13px;
